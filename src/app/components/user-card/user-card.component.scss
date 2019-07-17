@@ -1,0 +1,29 @@
+.card {
+  border-radius: 10px;
+  border: solid 1px #e5e5e5;
+  display: flex;
+  width: 450px;
+
+  &:hover {
+    box-shadow: 0 8px 20px 0 rgba(74, 76, 88, 0.15);
+    transition: 0.25s linear;
+  }
+
+  &__info-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__email-link {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    color: black;
+    margin: 0;
+  }
+}

@@ -1,0 +1,25 @@
+<div class="page">
+  <h1 class="page__title">
+    Users
+  </h1>
+  <ul class="page__users">
+    <li *ngFor="let user of usersList" class="page__user">
+      <a [routerLink]="getUserUrl(user.id)"
+        ><app-user-card [user]="user"></app-user-card
+      ></a>
+    </li>
+  </ul>
+
+  <ul class="page__pagination">
+    <li *ngFor="let pageNumber of countOfPages; let i = index">
+      <a
+        [routerLink]="getPageUrl(pageNumber)"
+        routerLinkActive="page__pagination-link--active"
+        (click)="changePage(pageNumber)"
+        class="page__pagination-link"
+      >
+        {{ pageNumber }}
+      </a>
+    </li>
+  </ul>
+</div>

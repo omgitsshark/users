@@ -1,0 +1,42 @@
+.page {
+  padding: 20px 0 0;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__user {
+    display: flex;
+    justify-content: center;
+
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+    border-radius: 2px;
+  }
+
+  &__pagination-link {
+    padding: 15px 20px;
+    display: block;
+    color: rgba(0, 0, 0, 0.95);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
